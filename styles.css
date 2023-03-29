@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #myCanvas {
+    border: 1px solid black;
+    margin-top: 5px;
+  }
