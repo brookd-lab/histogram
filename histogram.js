@@ -85,13 +85,13 @@ function drawGraph() {
     //validate numeric comma delimited list
     var status = true;
     arr.forEach(number => {
-        if (isNaN(number)) {
+        if (isNaN(number) || number > 400) {
             status = false;
             return;
         }
     })
     if (!status) {
-        alert('Please input comma delimited list')
+        alert('Please input comma delimited list (maximum height 400)')
         return;
     }
 
